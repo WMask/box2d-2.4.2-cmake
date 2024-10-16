@@ -15,5 +15,9 @@ FetchContent_GetProperties(box2d)
 
 ...
 
+target_include_directories(TargetModuleName
+	PUBLIC
+		${box2d_SOURCE_DIR}/box2d-src-v.2.4.2/include
+)
 target_link_libraries(TargetModuleName box2d)
 ```
