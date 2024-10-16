@@ -6,9 +6,9 @@ project(Box2D-cmake)
 
 set(CMAKE_CXX_STANDARD 11)
 
-file(GLOB_RECURSE Box2D_SRC
-	${CMAKE_SOURCE_DIR}/box2d-src-v.2.4.2/src/*.cpp
-	${CMAKE_SOURCE_DIR}/box2d-src-v.2.4.2/include/*.h
+file(GLOB_RECURSE Box2D_SRC RELATIVE ${CMAKE_SOURCE_DIR}
+	"box2d-src-v.2.4.2/src/*.cpp"
+	"box2d-src-v.2.4.2/include/*.h"
 )
 
 add_library(Box2D STATIC ${Box2D_SRC})
