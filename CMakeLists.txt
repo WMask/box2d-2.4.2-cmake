@@ -4,9 +4,9 @@ cmake_minimum_required(VERSION 3.11)
 
 project(Box2D-cmake)
 
-file(GLOB_RECURSE Box2D_SRC1 RELATIVE ${CMAKE_SOURCE_DIR} "box2d-src-v.2.4.2/src/*.cpp")
-file(GLOB_RECURSE Box2D_SRC2 RELATIVE ${CMAKE_SOURCE_DIR} "box2d-src-v.2.4.2/src/*.h")
-file(GLOB_RECURSE Box2D_INC RELATIVE ${CMAKE_SOURCE_DIR} "box2d-src-v.2.4.2/include/*.h")
+file(GLOB_RECURSE Box2D_SRC1 RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "box2d-src-v.2.4.2/src/*.cpp")
+file(GLOB_RECURSE Box2D_SRC2 RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "box2d-src-v.2.4.2/src/*.h")
+file(GLOB_RECURSE Box2D_INC RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "box2d-src-v.2.4.2/include/*.h")
 
 set(Box2D_ALL "${Box2D_SRC1};${Box2D_SRC2};${Box2D_INC}")
 
